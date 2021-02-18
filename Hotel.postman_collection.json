@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "cc8f8f64-ee59-41c9-93ae-3be3e41c921c",
+		"name": "Hotel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/hoteles/getHotel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/hoteles/getHotel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"hoteles",
+						"getHotel"
+					]
+				},
+				"description": "Todos los hoteles"
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta hotel getId",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"249942\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/hoteles/161901",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"hoteles",
+						"161901"
+					]
+				},
+				"description": "Borra un registro"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/hoteles/createHotel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"23456\",\r\n    \"name\": \"ambar\",\r\n    \"stars\": 5,\r\n    \"price\": 1887.2,\r\n    \"image\": \"2039609_120_b.jpg\",\r\n    \"amenities\": [\r\n        \"cambio Wilians\",\r\n        \"newspaper\",\r\n        \"restaurant\",\r\n        \"separate-bredroom\",\r\n        \"nightclub\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/hoteles/createHotel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"hoteles",
+						"createHotel"
+					]
+				},
+				"description": "crear registro"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/hoteles",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"90757\",\r\n    \"name\": \"ambar\",\r\n    \"stars\": 5,\r\n    \"price\": 1887.2,\r\n    \"image\": \"2039609_120_b.jpg\",\r\n    \"amenities\": [\r\n        \"cambio Wilians\",\r\n        \"newspaper\",\r\n        \"restaurant\",\r\n        \"separate-bredroom\",\r\n        \"nightclub\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/hoteles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"hoteles"
+					]
+				},
+				"description": "actualizar registro"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/hoteles/12345",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/hoteles/12345",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"hoteles",
+						"12345"
+					]
+				},
+				"description": "buscar registro por ID"
+			},
+			"response": []
+		}
+	]
+}
